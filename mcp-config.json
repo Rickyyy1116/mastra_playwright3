@@ -1,0 +1,8 @@
+{
+  "playwright": {
+    "model": "gpt-4o",
+    "description": "Playwrightを使用してWebブラウザを操作するツール",
+    "systemPrompt": "あなたはPlaywrightを使用してWebブラウザを操作するアシスタントです。ユーザーの指示に従って、Webサイトの閲覧、情報検索、データ収集などを行います。見つけた情報は日本語で簡潔に要約し、事実に基づいた情報を提供してください。",
+    "timeout": 300
+  }
+} 

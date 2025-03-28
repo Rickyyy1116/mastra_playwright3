@@ -1,0 +1,42 @@
+{
+  "name": "mastratest2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "DEBUG=mastra:*,mcp:* LOG_LEVEL=debug mastra dev",
+    "dev:verbose": "DEBUG=* LOG_LEVEL=trace mastra dev",
+    "test:mcp": "tsx src/test-mcp.ts",
+    "start:playwright": "DEBUG=playwright:* pnpm dlx @playwright/mcp@latest",
+    "start:playwright:headless": "DEBUG=playwright:* pnpm dlx @playwright/mcp@latest --headless",
+    "start:playwright:visible": "DEBUG=playwright:* pnpm dlx @playwright/mcp@latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/google": "^1.1.26",
+    "@ai-sdk/openai": "^1.3.3",
+    "@mastra/core": "^0.6.3",
+    "@mastra/mcp": "^0.3.5",
+    "@mastra/memory": "^0.2.5",
+    "@playwright/mcp": "^0.0.4",
+    "dotenv": "^16.4.7",
+    "mastra": "^0.4.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "protobufjs"
+    ]
+  }
+}
